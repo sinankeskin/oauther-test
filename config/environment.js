@@ -48,6 +48,11 @@ module.exports = function (environment) {
   }
 
   ENV['ember-oauther'] = {
+    popup: false,
+    popupOptions: {
+      width: 640,
+      heigth: 480,
+    },
     twitter: {
       consumerKey: '...',
       consumerSecret: '...',
