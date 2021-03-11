@@ -1,9 +1,8 @@
 import Oauth2CodeSignInRoute from 'ember-oauther/routes/oauth2-code-sign-in';
 
 export default class GoogleSignInRoute extends Oauth2CodeSignInRoute {
-  providerName = 'google';
-
   model(params) {
+    params.provider = 'google';
     // this.getAccessToken(params).then((accessToken) => {
     //   console.log(accessToken);
     // });
